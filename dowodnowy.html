@@ -253,99 +253,258 @@
             </div>
         </section>
 <section id="praw">
-  <p><strong>FRANCISZEK</strong></p>
-  <p class="sub">Imię (Imiona)</p>
 
-  <p><strong>KOŁOMAŃSKI</strong></p>
-  <p class="sub">Nazwisko</p>
+<p style="margin-top: -2px;"><strong></strong> FRANCISZEK</p>
 
-  <p>POLSKIE</p>
-  <p class="sub">Obywatelstwo</p>
+<p2 class="sub"style="position: relative; top: -13px;">Imię (Imiona)</p2><br>
 
-  <p><strong>24.06.2006</strong></p>
-  <p class="sub">Data urodzenia</p>
+<p style="transform: translateY(-10px);"><strong></strong> KOŁOMAŃSKI</p>
 
-  <p><strong>06262421373</strong></p>
-  <p class="sub">Numer PESEL</p>
+<p class="sub"style="position: relative; top: -22px;">Nazwisko</p><br>
+
+<p style="transform: translateY(-54px);">POLSKIE</p>
+
+<p2 class="sub" style="position: relative; top: -68px;">Obywatelstwo</p2><br>
+
+<p style="transform: translateY(-63px);"><strong></strong> 24.06.2006</p>
+
+<p2 class="sub" style="position: relative; top: -75px;">Data urodzenia</p2><br>
+
+<p style="transform: translateY(-69px);"><strong></strong> 06262421373</p>
+
+<p2 class="sub" style="position: relative; top: -81px;">Numer PESEL</p2><br>
+
 </section>
 
-<section id="bottom">
-  <img src="https://ib051vtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/checkmark.svg" alt="checkmark">
-  <p>Dokument ważny</p>
+</main>
+
+<section id="bottom" style="display: flex; height: 15px; overflow: hidden;">
+
+<img src="https://ib051vtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/checkmark.svg" alt="checkmark">
+
+<p>Dokument ważny</p>
+
 </section>
+    <head>
+        /* Sekcja główna */
+#praw {
+  position: relative;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: auto; /* Wysokość dopasowana do zawartości */
+}
 
-<style>
-  /* Styl ogólny */
-  #praw {
-    text-align: center;
-    padding: 20px;
+/* Styl dla paragrafów w sekcji */
+#praw p, #praw p2 {
+  position: absolute;
+  margin: 0;
+}
+
+/* Pozycjonowanie dla każdego paragrafu */
+#praw p:nth-child(1) {
+  top: 0;
+  font-size: 16px;
+}
+
+#praw p2:nth-child(1) {
+  top: -13px;
+  font-size: 12px;
+}
+
+#praw p:nth-child(2) {
+  top: 12px;
+  font-size: 16px;
+}
+
+#praw p2:nth-child(2) {
+  top: -22px;
+  font-size: 12px;
+}
+
+#praw p:nth-child(3) {
+  top: 30px;
+  font-size: 16px;
+}
+
+#praw p2:nth-child(3) {
+  top: -68px;
+  font-size: 12px;
+}
+
+#praw p:nth-child(4) {
+  top: 60px;
+  font-size: 16px;
+}
+
+#praw p2:nth-child(4) {
+  top: -75px;
+  font-size: 12px;
+}
+
+#praw p:nth-child(5) {
+  top: 90px;
+  font-size: 16px;
+}
+
+#praw p2:nth-child(5) {
+  top: -81px;
+  font-size: 12px;
+}
+
+/* Sekcja dolna (informacja o ważności) */
+#bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+#bottom img {
+  width: 20px;
+  height: 20px;
+}
+
+#bottom p {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* Media Queries - Zmiany dla mniejszych ekranów */
+
+/* Dla ekranów o szerokości mniejszej niż 768px */
+@media (max-width: 768px) {
+  #praw p:nth-child(1) {
+    top: 0;
+    font-size: 14px;
   }
 
-  #praw p {
-    margin: 10px 0;
+  #praw p2:nth-child(1) {
+    top: -13px;
+    font-size: 11px;
   }
 
-  /* Podtytuły */
-  .sub {
-    font-size: 0.9rem;
-    color: gray;
+  #praw p:nth-child(2) {
+    top: 20px;
+    font-size: 14px;
   }
 
-  /* Sekcja z obrazkiem i tekstem */
+  #praw p2:nth-child(2) {
+    top: -22px;
+    font-size: 11px;
+  }
+
+  #praw p:nth-child(3) {
+    top: 40px;
+    font-size: 14px;
+  }
+
+  #praw p2:nth-child(3) {
+    top: -68px;
+    font-size: 11px;
+  }
+
+  #praw p:nth-child(4) {
+    top: 60px;
+    font-size: 14px;
+  }
+
+  #praw p2:nth-child(4) {
+    top: -75px;
+    font-size: 11px;
+  }
+
+  #praw p:nth-child(5) {
+    top: 80px;
+    font-size: 14px;
+  }
+
+  #praw p2:nth-child(5) {
+    top: -81px;
+    font-size: 11px;
+  }
+
   #bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-  }
-
-  #bottom p {
-    font-size: 1rem;
+    height: 45px;
   }
 
   #bottom img {
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 
-  /* Responsywność */
-  @media (max-width: 768px) {
-    #praw p {
-      font-size: 1.1rem;
-    }
+  #bottom p {
+    font-size: 14px;
+  }
+}
 
-    #praw .sub {
-      font-size: 0.8rem;
-    }
-
-    #bottom p {
-      font-size: 0.9rem;
-    }
-
-    #bottom img {
-      height: 18px;
-    }
+/* Dla ekranów o szerokości mniejszej niż 480px */
+@media (max-width: 480px) {
+  #praw p:nth-child(1) {
+    top: 0;
+    font-size: 12px;
   }
 
-  @media (max-width: 480px) {
-    #praw p {
-      font-size: 0.9rem;
-    }
-
-    #praw .sub {
-      font-size: 0.7rem;
-    }
-
-    #bottom p {
-      font-size: 0.8rem;
-    }
-
-    #bottom img {
-      height: 15px;
-    }
+  #praw p2:nth-child(1) {
+    top: -13px;
+    font-size: 10px;
   }
-</style>
 
+  #praw p:nth-child(2) {
+    top: 18px;
+    font-size: 12px;
+  }
+
+  #praw p2:nth-child(2) {
+    top: -22px;
+    font-size: 10px;
+  }
+
+  #praw p:nth-child(3) {
+    top: 36px;
+    font-size: 12px;
+  }
+
+  #praw p2:nth-child(3) {
+    top: -68px;
+    font-size: 10px;
+  }
+
+  #praw p:nth-child(4) {
+    top: 54px;
+    font-size: 12px;
+  }
+
+  #praw p2:nth-child(4) {
+    top: -75px;
+    font-size: 10px;
+  }
+
+  #praw p:nth-child(5) {
+    top: 72px;
+    font-size: 12px;
+  }
+
+  #praw p2:nth-child(5) {
+    top: -81px;
+    font-size: 10px;
+  }
+
+  #bottom {
+    height: 40px;
+  }
+
+  #bottom img {
+    width: 16px;
+    height: 16px;
+  }
+
+  #bottom p {
+    font-size: 12px;
+  }
+}
+        <style>
+    </head>
+</style>            
     </main>
   <section id="bottom" style="display: flex; height: 15px; overflow: hidden;">
     <img src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/checkmark.svg" alt="checkmark">
