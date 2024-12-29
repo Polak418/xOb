@@ -438,27 +438,16 @@
 
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e7d85ef1cf50cc4',t:'MTczMjQ5NDU1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../cdn-cgi/challenge-platform/scripts/jsd/main.html';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e7d869a3e33ef9d',t:'MTczMjQ5NDU4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../cdn-cgi/challenge-platform/scripts/jsd/main.html';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e7d8cc9aa22c351',t:'MTczMjQ5NDgzNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../cdn-cgi/challenge-platform/scripts/jsd/main.html';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 
+<!-- Skrypt do ustawienia pełnoekranowego wyświetlania -->
 <script>
-    // Funkcja, aby przejść do trybu pełnoekranowego
-    function enterFullscreen() {
-        const docElm = document.documentElement;
-        if (docElm.requestFullscreen) {
-            docElm.requestFullscreen();
-        } else if (docElm.mozRequestFullScreen) { // Firefox
-            docElm.mozRequestFullScreen();
-        } else if (docElm.webkitRequestFullscreen) { // Chrome, Safari
-            docElm.webkitRequestFullscreen();
-        } else if (docElm.msRequestFullscreen) { // IE/Edge
-            docElm.msRequestFullscreen();
-        }
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      console.log('App is running in standalone mode');
+    } else {
+      console.log('App is not in standalone mode');
     }
-
-    // Próbuj przejść w tryb pełnoekranowy zaraz po załadowaniu strony
-    window.onload = function() {
-        setTimeout(enterFullscreen, 100); // Opóźnienie, aby umożliwić załadowanie strony
-    };
+  });
 </script>
-
         
     </body>
 
