@@ -568,16 +568,12 @@
     }
 </style>
 
-<!-- Skrypt do ustawienia pełnoekranowego wyświetlania -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      console.log('App is running in standalone mode');
-    } else {
-      console.log('App is not in standalone mode');
-    }
-  });
+  if (window.matchMedia('(display-mode: standalone)').matches) {
+    document.documentElement.style.setProperty('overflow', 'scroll');
+    document.body.style.marginTop = '0';
+    window.scrollTo(0, 1);
+  }
 </script>
-
 </body>
 </html>
