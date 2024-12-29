@@ -20,14 +20,40 @@
 <body>
     <iframe src="logowanie.html"></iframe>
 
-    <!-- Meta tagi, które sprawią, że pasek URL zniknie po dodaniu strony na ekran główny -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
-<meta name="apple-mobile-web-app-capable" content="yes"> <!-- Dla iOS -->
-<meta name="mobile-web-app-capable" content="yes"> <!-- Dla Androida -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Kolor paska statusu dla iOS -->
-<meta name="apple-mobile-web-app-title" content="Twoja Strona"> <!-- Tytuł wyświetlany na ekranie głównym -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Twoja Strona">
 
-<!-- Zakończenie body -->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* Ukrywa pasek przewijania */
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .scrollable {
+        overflow-y: scroll; /* Pozwala na przewijanie w pionie */
+        -webkit-overflow-scrolling: touch; /* Płynne przewijanie na urządzeniach dotykowych */
+        height: 100%;
+        width: 100%;
+    }
+
+    .scrollable::-webkit-scrollbar {
+        display: none; /* Ukrywa pasek przewijania */
+    }
+</style>
+
+<body>
+    <div class="scrollable">
+        <!--index.html-->
     
 </body>
 </html>
