@@ -252,7 +252,7 @@
                 <p>Rzeczpospolita<br>Polska</p>
             </div>
         </section>
-     <section id="praw" style="text-align: center;">
+<section id="praw">
   <p><strong>FRANCISZEK</strong></p>
   <p class="sub">Imię (Imiona)</p>
 
@@ -269,30 +269,49 @@
   <p class="sub">Numer PESEL</p>
 </section>
 
-<section id="bottom" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-  <img src="https://ib051vtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/checkmark.svg" alt="checkmark" style="height: 20px;">
+<section id="bottom">
+  <img src="https://ib051vtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/checkmark.svg" alt="checkmark">
   <p>Dokument ważny</p>
 </section>
 
 <style>
-  /* Ogólny styl sekcji */
-  #praw p {
-    margin: 5px 0; /* Standardowe marginesy między liniami */
+  /* Styl ogólny */
+  #praw {
+    text-align: center;
+    padding: 20px;
   }
 
-  #praw .sub {
-    font-size: 0.9rem; /* Mniejszy tekst dla podtytułów */
+  #praw p {
+    margin: 10px 0;
+  }
+
+  /* Podtytuły */
+  .sub {
+    font-size: 0.9rem;
     color: gray;
+  }
+
+  /* Sekcja z obrazkiem i tekstem */
+  #bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
   }
 
   #bottom p {
     font-size: 1rem;
   }
 
-  /* Układ responsywny */
+  #bottom img {
+    height: 20px;
+  }
+
+  /* Responsywność */
   @media (max-width: 768px) {
     #praw p {
-      font-size: 1rem; /* Pomniejsz tekst na mniejszych ekranach */
+      font-size: 1.1rem;
     }
 
     #praw .sub {
@@ -304,13 +323,13 @@
     }
 
     #bottom img {
-      height: 15px; /* Zmniejsz ikonę */
+      height: 18px;
     }
   }
 
   @media (max-width: 480px) {
     #praw p {
-      font-size: 0.9rem; /* Jeszcze mniejszy tekst dla małych ekranów */
+      font-size: 0.9rem;
     }
 
     #praw .sub {
@@ -322,10 +341,11 @@
     }
 
     #bottom img {
-      height: 12px;
+      height: 15px;
     }
   }
 </style>
+
     </main>
   <section id="bottom" style="display: flex; height: 15px; overflow: hidden;">
     <img src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/checkmark.svg" alt="checkmark">
