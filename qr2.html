@@ -282,6 +282,28 @@
     </div>
 </div>
 
+    <script>
+    // Funkcja, aby przejść do trybu pełnoekranowego
+    function enterFullscreen() {
+        const docElm = document.documentElement;
+        if (docElm.requestFullscreen) {
+            docElm.requestFullscreen();
+        } else if (docElm.mozRequestFullScreen) { // Firefox
+            docElm.mozRequestFullScreen();
+        } else if (docElm.webkitRequestFullscreen) { // Chrome, Safari
+            docElm.webkitRequestFullscreen();
+        } else if (docElm.msRequestFullscreen) { // IE/Edge
+            docElm.msRequestFullscreen();
+        }
+    }
+
+    // Próbuj przejść w tryb pełnoekranowy zaraz po załadowaniu strony
+    window.onload = function() {
+        setTimeout(enterFullscreen, 100); // Opóźnienie, aby umożliwić załadowanie strony
+    };
+</script>
+
+
 </body>
 
 
