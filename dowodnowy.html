@@ -369,7 +369,7 @@
     height: auto; /* Elementy dostosowują się do tekstu */
     line-height: 1.2em; /* Wyrównanie tekstu */
     font-size: 10px; /* Rozmiar czcionki */
-    margin: 10px 0; /* Większe odstępy między tekstami */
+    margin: 15px 0; /* Większe odstępy między tekstami */
     padding: 0;
   }
 
@@ -391,12 +391,30 @@
     style="cursor: pointer; display: flex; align-items: center; padding: 3px 3px; border-radius: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);" 
     href="dashboard2.html"
 >
-    <div>
-        <p class="info">Ostatnia aktualizacja</p>
-        <p id="sukadziwkakurwa" class="main">00.00.0000</p>
-    </div>
-    <button id="aktualizuj" style="border: none; background: none; cursor: pointer;">Aktualizuj</button>
-</a>
+  <div>
+    <p class="info">Ostatnia aktualizacja</p>
+    <p id="sukadziwkakurwa" class="main">00.00.0000</p>
+</div>
+<button id="aktualizuj" style="border: none; background: none; cursor: pointer;">Aktualizuj</button>
+
+<style>
+    /* Usunięcie podkreślenia z tekstu */
+    p {
+        text-decoration: none;
+    }
+
+    /* Powiększenie napisu z klasą info */
+    .info {
+        font-size: 20px; /* Powiększenie napisu */
+    }
+
+    /* Przesunięcie napisu z klasą main w prawo */
+    .main {
+        text-align: right; /* Przesunięcie w prawo */
+        font-size: 22px; /* Powiększenie czcionki */
+    }
+</style>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <a class="buto" style="cursor: pointer; display: flex; align-items: left; padding: 5px 5px; border-radius: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); text-decoration: none; font-family: Arial, sans-serif;" onclick="confirmDelete()">
