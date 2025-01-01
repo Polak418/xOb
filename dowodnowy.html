@@ -455,31 +455,33 @@
         </section>
         <section id="danedowodu" style="display: none;">
             <div id="szaro"></div>
-          <section id="danedowodowe">
+<section id="danedowodowe">
     <section>
         <p id="danetitle">Dane dowodu osobistego</p>
         <section id="danebox">
             <section class="dana">
                 <p class="info">Sеria i numer</p>
-                <p class="p3 seria"><strong>TRF894293</strong><button id="kopiuj">Kopiuj</button></p> 
+                <p class="p3 seria">TRF894293<button id="kopiuj">Kopiuj</button></p>
             </section>
             <p class="krecha2"></p>
             <section class="dana">
                 <p class="info">Organ wydаjący</p>
-                <p class="p3"><strong>PREZYDENT MIASTA WARSZAWA</strong></p>
+                <p class="p3">PREZYDENT MIASTA WARSZAWA</p>
             </section>
             <p class="krecha2"></p>
             <section class="dana">
                 <p class="info">Tеrmin ważności</p>
-                <p class="p3"><strong>2032-06-17</strong></p>
+                <p class="p3">2032-06-17</p>
             </section>
             <p class="krecha2"></p>
             <section class="dana">
                 <p class="info">Data wydaniа</p>
-                <p class="p3"><strong>2022-06-17</strong></p>
+                <p class="p3">2022-06-17</p>
             </section>
         </section>
     </section>
+
+    <!-- Przycisk zamknij i wróć -->
     <section id="bottooom">
         <button class="zamknijprzycisk" onclick="zamknij2()">Zamknij</button>
         <button class="wrocprzycisk" onclick="wroc()">Wróć</button>
@@ -494,45 +496,58 @@
             <section id="danebox">
                 <section class="dana">
                     <p class="info">Seriа i numer</p>
-                    <p class="p3 seria"><strong>TRF894293</strong><button id="kopiuj">Kopiuj</button></p>  
+                    <p class="p3 seria">TRF894293<button id="kopiuj">Kopiuj</button></p>
                 </section>
                 <p class="krecha2"></p>
                 <section class="dana">
                     <p class="info">Termin wаżności</p>
-                    <p class="p3"><strong>2032-06-17</strong></p>
+                    <p class="p3">2032-06-17</p>
                 </section>
                 <p class="krecha2"></p>
                 <section class="dana">
                     <p class="info">Data wydaniа</p>
-                    <p class="p3"><strong>2022-06-17</strong></p>
+                    <p class="p3">2022-06-17</p>
                 </section>
                 <p class="krecha2"></p>
                 <section class="dana">
                     <p class="info">Imię ojcа</p>
-                    <p class="p3"><strong>GRZEGORZ</strong></p>
+                    <p class="p3">GRZEGORZ</p>
                 </section>
                 <p class="krecha2"></p>
                 <section class="dana">
                     <p class="info">Imię mаtki</p>
-                    <p class="p3"><strong>AGNIESZKA</strong></p>
+                    <p class="p3">AGNIESZKA</p>
                 </section>
             </section>
         </section>
     </section>
+    
+    <!-- Przycisk zamknij i wróć -->
     <section id="bottooom">
         <button class="zamknijprzycisk" onclick="zamknij2()">Zamknij</button>
         <button class="wrocprzycisk" onclick="wroc()">Wróć</button>
     </section>
 </section>
 
+<!-- CSS dla powiększenia tekstu i pogrubienia -->
 <style>
     /* Powiększenie tekstu w klasie p3 */
     .p3 {
-        font-size: 30px; /* Powiększenie czcionki */
-        font-weight: bold; /* Pogrubienie tekstu */
+        font-size: 30px !important; /* Powiększenie czcionki */
+        font-weight: bold !important; /* Pogrubienie tekstu */
+        display: inline-block; /* Aby tekst nie był ułamany, jeśli jest długi */
+    }
+
+    /* Upewnij się, że przyciski są widoczne */
+    #bottooom {
+        margin-top: 20px; /* Dodatkowy odstęp między przyciskami a resztą */
+    }
+    .zamknijprzycisk, .wrocprzycisk {
+        padding: 10px 20px; /* Rozmiar przycisków */
+        font-size: 16px; /* Rozmiar czcionki przycisków */
     }
 </style>
-
+         
 
     <script src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/wybor.js"></script>
     <script src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/scale.js"></script>
