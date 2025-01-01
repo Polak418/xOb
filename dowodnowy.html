@@ -200,7 +200,7 @@
             <img src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/pozdro.svg" alt="leftarrow">
         </a>
         <span style="font-family: 'Inter'; font-weight: 900; position: relative; left: -6%;">mDowód</span>
-        <img style="width: 25px; height: 25px;" src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/madziamojakotka123.svg" alt="">
+        <img style="width: 25px; height: 25px; position: relative; left: -40px;" src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/madziamojakotka123.svg" alt="">
     </header>
    <div class="info-section" id="info-section" style="margin-left: 20px; margin-right: 20px;">
     <p>
@@ -234,7 +234,7 @@
     <p class="czas">Czas: 20:32:33 15.05.2024</p>
     <script src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/timenew.js"></script>
     <main>
-       <section id="lew">
+        <section id="lew">
             <img src="https://i.imgur.com/gPmqW2d.jpeg" class="object-contain w-fu 11 rounded-1g photo" style="left: 1px; /* X: 1px */
             top: 1px; /* Y: 1px */
             width: 120px; /* Width: 120px */
@@ -572,5 +572,18 @@
             blueSection.style.display = 'none';
         });
   </script>
+<style>
+    html, body {
+        overflow-x: hidden; /* Wyłącza przewijanie w poziomie */
+    }
+</style>
+
+<script>
+  if (window.matchMedia('(display-mode: standalone)').matches) {
+    document.documentElement.style.setProperty('overflow', 'scroll');
+    document.body.style.marginTop = '0';
+    window.scrollTo(0, 1);
+  }
+</script>
 </body>
 </html>
