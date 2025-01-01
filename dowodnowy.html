@@ -455,27 +455,27 @@
         </section>
         <section id="danedowodu" style="display: none;">
             <div id="szaro"></div>
-            <section id="danedowodowe">
+           <section id="danedowodowe">
     <section>
         <p id="danetitle">Dane dowodu osobistego</p>
         <section id="danebox">
             <section class="dana">
-                <p class="info">Sеria i numer</p>
+                <p class="info">Seria i numer</p>
                 <p class="p3 seria">TRF894293<button id="kopiuj">Kopiuj</button></p>
             </section>
             <p class="krecha2"></p>
             <section class="dana">
-                <p class="info">Organ wydаjący</p>
+                <p class="info">Organ wydający</p>
                 <p class="p3">PREZYDENT MIASTA WARSZAWA</p>
             </section>
             <p class="krecha2"></p>
             <section class="dana">
-                <p class="info">Tеrmin ważności</p>
+                <p class="info">Termin ważności</p>
                 <p class="p3">2032-06-17</p>
             </section>
             <p class="krecha2"></p>
             <section class="dana">
-                <p class="info">Data wydaniа</p>
+                <p class="info">Data wydania</p>
                 <p class="p3">2022-06-17</p>
             </section>
         </section>
@@ -487,76 +487,29 @@
 </section>
 
 <style>
+    /* Styl dla klasy p3 */
     .p3 {
-        font-size: 30px; /* Powiększenie tekstu */
-        font-weight: bold; /* Pogrubienie */
-        margin-left: 10px; /* Przesunięcie w prawo */
-    }
-
-    .zamknijprzycisk, .wrocprzycisk {
-        padding: 10px 20px;
-        font-size: 16px;
-        margin: 10px;
-        cursor: pointer;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-    }
-</style>
-
-            </section>
-        </section>
-        <section id="danemdowodu" style="display: none;">
-            <div id="szaro"></div>
-           <section id="danedowodowe">
-    <section>
-        <p id="danetitle">Dane mDowodu</p>
-        <section id="danebox">
-            <section class="dana">
-                <p class="info">Seriа i numer</p>
-                <p class="p4 seria">TRF894293<button id="kopiuj">Kopiuj</button></p>
-            </section>
-            <p class="krecha2"></p>
-            <section class="dana">
-                <p class="info">Termin wаżności</p>
-                <p class="p4"><strong></strong> 2032-06-17</p>
-            </section>
-            <p class="krecha2"></p>
-            <section class="dana">
-                <p class="info">Data wydaniа</p>
-                <p class="p4"><strong></strong> 2022-06-17</p>
-            </section>
-            <p class="krecha2"></p>
-            <section class="dana">
-                <p class="info">Imię ojcа</p>
-                <p class="p4"><strong></strong> GRZEGORZ</p>
-            </section>
-            <p class="krecha2"></p>
-            <section class="dana">
-                <p class="info">Imię mаtki</p>
-                <p class="p4"><strong></strong> AGNIESZKA</p>
-            </section>
-        </section>
-    </section>
-    <section id="bottooom">
-        <button class="zamknijprzycisk" onclick="zamknij2()">Zamknij</button>
-        <button class="wrocprzycisk" onclick="wroc()">Wróć</button>
-    </section>
-</section>
-
-<style>
-    /* Styl dla klasy p4 */
-    .p4 {
         font-size: 18px; /* Powiększ tekst */
         font-weight: bold; /* Pogrubienie */
     }
 
     /* Styl dla przycisków */
-    .zamknijprzycisk, .wrocprzycisk {
-        font-size: 14px;
+    .zamknijprzycisk {
+        border: 1px solid blue; /* Niebieska cienka obramówka */
+        background-color: white; /* Białe tło */
+        color: blue; /* Niebieski napis */
         padding: 5px 10px;
         cursor: pointer;
+        border-radius: 5px; /* Zaokrąglone rogi */
+    }
+
+    .wrocprzycisk {
+        background: none; /* Brak tła */
+        border: none; /* Brak obramowania */
+        color: blue; /* Niebieski napis */
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 14px;
     }
 
     /* Styl dla reszty elementów */
@@ -600,6 +553,117 @@
         // Przykładowa akcja powrotu
         alert("Powrót do poprzedniego ekranu.");
     }
+</script>
+
+            </section>
+        </section>
+        <section id="danemdowodu" style="display: none;">
+            <div id="szaro"></div>
+        <section id="danedowodowe">
+    <section>
+        <p id="danetitle">Dane mDowodu</p>
+        <section id="danebox">
+            <section class="dana">
+                <p class="info">Seriа i numer</p>
+                <p class="p4 seria">TRF894293<button id="kopiuj">Kopiuj</button></p>
+            </section>
+            <p class="krecha2"></p>
+            <section class="dana">
+                <p class="info">Termin wаżności</p>
+                <p class="p4"><strong></strong> 2032-06-17</p>
+            </section>
+            <p class="krecha2"></p>
+            <section class="dana">
+                <p class="info">Data wydaniа</p>
+                <p class="p4"><strong></strong> 2022-06-17</p>
+            </section>
+            <p class="krecha2"></p>
+            <section class="dana">
+                <p class="info">Imię ojcа</p>
+                <p class="p4"><strong></strong> GRZEGORZ</p>
+            </section>
+            <p class="krecha2"></p>
+            <section class="dana">
+                <p class="info">Imię mаtki</p>
+                <p class="p4"><strong></strong> AGNIESZKA</p>
+            </section>
+        </section>
+    </section>
+    <section id="bottooom">
+        <button class="zamknijprzycisk" onclick="zamknij2()">Zamknij</button>
+        <button class="wrocprzycisk" onclick="wroc()">Wróć</button>
+    </section>
+</section>
+
+<style>
+    /* Styl dla klasy p4 */
+    .p4 {
+        font-size: 18px; /* Powiększ tekst */
+        font-weight: bold; /* Pogrubienie */
+    }
+
+    /* Styl dla przycisków */
+    .zamknijprzycisk {
+        border: 1px solid blue; /* Niebieska cienka obramówka */
+        background-color: white; /* Białe tło */
+        color: blue; /* Niebieski napis */
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px; /* Zaokrąglone rogi */
+    }
+
+    .wrocprzycisk {
+        background: none; /* Brak tła */
+        border: none; /* Brak obramowania */
+        color: blue; /* Niebieski napis */
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    /* Styl dla reszty elementów */
+    #danetitle {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .info {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .dana {
+        margin-bottom: 10px;
+    }
+
+    .krecha2 {
+        border-bottom: 1px solid #ccc;
+        margin: 10px 0;
+    }
+
+    #danebox {
+        margin: 20px;
+    }
+
+    #bottooom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+</style>
+
+<script>
+    function zamknij2() {
+        document.getElementById("danedowodowe").style.display = "none";
+    }
+
+    function wroc() {
+        // Przykładowa akcja powrotu
+        alert("Powrót do poprzedniego ekranu.");
+    }
+</script>
+
 </script>
 
 
